@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+}
+body header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5vh 5vw;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+body header .sns {
+  display: flex;
+}
+body header .sns a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 20px;
+}
+body main {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bgBody.jpg) no-repeat center/cover;
+}
+body main.off .txt {
+  transform: translateY(-200%);
+  opacity: 0;
+}
+body main.off .woman {
+  left: 100%;
+  opacity: 0;
+}
+body main.off .btnOpen {
+  bottom: 0vh;
+  opacity: 0;
+}
+body main .txt {
+  width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 15vw;
+  transform: translateY(-70%);
+  transition: 1s 0s;
+}
+body main .woman {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: 1s 0.2s;
+}
+body main .btnOpen {
+  display: block;
+  width: 20vw;
+  min-width: 300px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 30vh;
+  left: 15vw;
+  font: bold 14px/1 "arial";
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s 0.4s;
+}
+body footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer ul {
+  display: flex;
+}
+body footer ul li {
+  margin-right: 50px;
+  font: bold 12px/1 "arial";
+  color: #aaa;
+}
+body footer p {
+  font: 12px/1 "arial";
+  color: #aaa;
+  letter-spacing: 3px;
+}
+body aside {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+body aside .top {
+  width: 0%;
+  height: 1px;
+  background: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body aside .right {
+  width: 1px;
+  height: 0%;
+  background: #111;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body aside .bottom {
+  width: 0%;
+  height: 1px;
+  background: #111;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body aside .left {
+  width: 1px;
+  height: 0%;
+  background: #111;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+body aside .inner {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body aside .inner .pic {
+  width: 30%;
+}
+body aside .inner .content {
+  width: 65%;
+}
+body aside .inner .content h2 {
+  font: normal 5vw/1 "work sans";
+  color: #fff;
+  margin-bottom: 20px;
+}
+body aside .inner .content p {
+  font: 16px/1.3 "arial";
+  color: #666;
+}
+body aside .inner .content .btnClose {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
